@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Alcoste</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="../img/alcoste.png" alt="" width="175" height="75">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Itens
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="polobranca.html">Polo Branca</a></li>
+                    <li><a class="dropdown-item" href="polovermelha.html">Polo Vermelha</a></li>
+                    <li><a class="dropdown-item" href="bonebranco.html">Boné masculino</a></li>
+                    <li><a class="dropdown-item" href="mangalonga.html">Mangas longas</a></li>
+                    <li><a class="dropdown-item" href="edicaolimitada.html">Polo edição limitada</a></li>
+                    <li><a class="dropdown-item" href="shortmasculino.html">Short masculino</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre nós</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+    </header>
+        <main>
+            <section id= "manga_longa" class="manga_longa">
+                <div class= "container">
+                  <div class= "row">
+                    <div class= "col-xs-12">
+                        <img src="../img/mangaslongas1.jpg" class="rounded float-start" alt="...">
+                    <img src="../img/mangaslongas2.jpg" class="rounded float-end" alt="...">
+                    </div>  
+                        <h3>Polo de mangas longas</h3>
+                  </div>
+                </div>
+              </section>
+              <div class= "container">
+                <p>Com mangas longas e uma malha grossa em piquet de algodão, esta polo garante conforto e aquecimento. Este item essencial no guarda-roupa masculino dá um charmoso toque casual aos looks cotidianos.</p> 
+                <div id= "infoMangaLonga">
+                  <div id= "left">
+                    <h4>Boas práticas</h4>
+                    <p class= "infoMangaLonga">Lavar, secar, engomar, dobrar: descubra todos os conselhos práticos para elevar o seu polo Alcoste a um nível profissional.</p>
+                  </div>
+                </div>
+              </div>
+        </main>
+        <footer id="sobre" class="footer-07">
+          <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-12 text-center">                         
+                  <div class="container row mt-0">
+                    <div class="col-md-12 text-center mt-5">
+                      <h5 class="text-dark">Guilherme dos Santos Raymundo</h5>
+                      <ul class="nav flex-row px-2 d-flex justify-content-center align-items-center" style="gap:15px;">
+                      <li class="nav-item mb-2"><a href="https://api.whatsapp.com/send?phone=11941977770" target="_blank" class="nav-link p-0 text-muted"><img class="rede" src="../img/whatsapp.png" alt="perfil-whatsapp"></a></li>
+                      <li class="nav-item mb-2"><a href="https://www.instagram.com/guii_dsr" target="_blank" class="nav-link p-0 text-muted"><img class="rede" src="../img/instagram.png" alt="perfil-instagram"></a></li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+              <div class="row mt-5">
+                  <div class="col-md-12 text-center mt-5">
+                      <p class="copyright text-dark"> © Checkpoint 03, desenvolvido em 2021.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </footer>
+      <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                  <a class="navbar-brand" href="logo_dh">
+                    <img src="../img/alcoste.png" alt="Logo alcoste" width="100">
+                  </a>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">Senha:</label>
+                        <input type="password" class="form-control" id="message-text">
+                      </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-lg btn-outline-dark px-3">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
